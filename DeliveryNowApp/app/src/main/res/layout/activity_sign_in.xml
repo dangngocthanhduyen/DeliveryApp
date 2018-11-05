@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="horizontal">
+
+    <!--Logo-->
+    <ImageView
+        android:id="@+id/logo_iv"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <!--Email EditText-->
+    <EditText
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:id="@+id/email_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_iv"
+        android:layout_marginTop="10dp"
+        android:hint="@string/email"
+        android:textColorLink="@android:color/darker_gray"/>
+
+    <!--Password EditText-->
+    <EditText
+        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_et"
+        android:hint="@string/password"
+        android:layout_marginTop="10dp"
+        android:textColorLink="@android:color/darker_gray"/>
+
+    <!--Sign In Button-->
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/sign_in_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        android:text="@string/signIn"
+        android:layout_below="@+id/password_et"
+        android:textColor="#000"/>
+
+    <!--Forgot your password TextView-->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/forgot_your_password_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_btn"
+        android:layout_centerHorizontal="true"
+        android:linksClickable="true"
+        android:text="@string/forgotYourPassword"/>
+
+    <!--Or TextView-->
+    <TextView
+        android:text="@string/or"
+        android:id="@+id/or_tv"
+        android:layout_above="@+id/sign_up_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"/>
+
+    <!--Sign Up Button-->
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/startBlue"
+        android:text="@string/signUp"
+        android:layout_above="@+id/tv_rl2"
+        android:textColor="#FFF"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

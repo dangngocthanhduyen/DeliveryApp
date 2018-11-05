@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ImageSlider</string>
+    <string name="getStarted">Get Started</string>
+    <string name="haveAnotherAccount">Have another account? </string>
+    <string name="signInNow"><a href="http://www.bla.com">Sign in now</a></string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="bySigningUp">By signing up, you agree</string>
+    <string name="termsOfUse"><a href="http://www.bla.com">terms of use</a></string>
+    <string name="alreadyHaveAnAccount">Already have an account? </string>
+    <string name="signIn"><a href="http://www.bla.com">Sign In</a></string>
+    <string name="signUp">Sign Up</string>
+    <string name="forgotYourPassword"><a href="http://www.bla.com">Forgot Your Password</a></string>
+    <string name="or">Or</string>
+    <string name="popularBrand">Popular Brand</string>
+    <string name="suggestName">The Alley, Bún thịt nướng,&#8230;</string>
+    <string name="nameCoffee">The Coffee House</string>
+    <string name="address">444A Cộng Hòa, P13, Tân Bình, TPHCM</string>
+    <string name="km">588km</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+        <!--slide full screen-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <ViewFlipper
+                    android:id="@+id/v_flipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                </ViewFlipper>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+                <!--GET STARTED button-->
+                <Button
+                    android:id="@+id/get_started_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/startBlue"
+                    android:text="@string/getStarted"
+                    android:layout_above="@+id/tv_rl"
+                    android:textColor="#FFF" />
+
+                <!--Have another account? Sign in now TextView-->
+                <RelativeLayout
+                    android:id="@+id/tv_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true">
+                    <TextView
+                        android:text="@string/haveAnotherAccount"
+                        android:id="@+id/have_another_account_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:paddingLeft="5dp"
+                        android:id="@+id/sign_in_now_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/have_another_account_tv"
+                        android:layout_toRightOf="@+id/have_another_account_tv"
+                        android:linksClickable="true"
+                        android:text="@string/signInNow"
+                        android:textColorLink="@android:color/holo_blue_dark"/>
+                </RelativeLayout>
+
+        </RelativeLayout>
+</FrameLayout>
