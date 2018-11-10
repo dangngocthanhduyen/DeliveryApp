@@ -2,16 +2,15 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
+    android:layout_height="wrap_content">
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/ic_person_black_24dp"/>
+        android:src="@drawable/milkteaphuclong"/>
 
     <LinearLayout
-        android:layout_marginLeft="10dp"
-        android:layout_width="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_width="0dp"
         android:layout_height="80dp"
         android:orientation="vertical"
         android:layout_weight="1">
@@ -20,21 +19,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/nameCoffee"/>
+            android:text="@string/nameCoffee"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/address_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColor="@android:color/black"
             android:text="@string/address"/>
 
         <TextView
-            android:id="@+id/km_tv"
+            android:id="@+id/distance_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/km"/>
+            android:textColor="@android:color/black"
+            android:text="@string/distance"/>
 
     </LinearLayout>
 
