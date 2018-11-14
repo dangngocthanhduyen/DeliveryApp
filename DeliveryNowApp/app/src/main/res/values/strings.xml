@@ -19,4 +19,8 @@
     <string name="nameCoffee">The Coffee House</string>
     <string name="address">444A Cộng Hòa, P13, Tân Bình, TPHCM</string>
     <string name="distance">588km</string>
+    <string name="nameUser">Đặng Ngọc Thanh Duyên</string>
+    <string name="phoneUser">0332533968</string>
+    <string name="emailUser">dangngocthanhduyen.2712@gmail.com</string>
+    <string name="signOut">Sign Out</string>
 </resources>

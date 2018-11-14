@@ -25,8 +25,6 @@
             android:layout_alignBaseline="@+id/logo_iv"
             android:drawableLeft="@drawable/ic_search_black_24dp"
             android:hint="@string/suggestName"/>
-
-
     </RelativeLayout>
 
     <!--slide-->
@@ -43,29 +41,31 @@
         </ViewFlipper>
     </RelativeLayout>
 
-    <!--<TextView-->
-    <!--android:paddingLeft="10dp"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="@string/popularBrand"-->
-    <!--android:layout_weight="0.1"-->
-    <!--android:layout_gravity="center_vertical"-->
-    <!--/>-->
+    <TextView
+        android:paddingStart="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popularBrand"
+        android:textColor="@android:color/black"
+        android:layout_weight="0.1"
+        android:layout_gravity="center_vertical"
+        android:textAllCaps="true"/>
 
     <!--ListView-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5.5">
+        android:layout_weight="5.4">
 
         <ListView
+            android:paddingStart="10dp"
             android:id="@+id/listview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:background="@android:color/background_light" />
-
+            android:background="@android:color/background_light">
+        </ListView>
     </RelativeLayout>
 
     <!--Menu-->
@@ -78,7 +78,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_home_black_24dp"
+            android:src="@drawable/ic_home_blue_24dp"
             android:layout_weight="1"/>
 
         <ImageView

@@ -44,9 +44,9 @@ public class ProductListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View v = View.inflate(mContext, R.layout.item_product, null);
-        TextView tvName = (TextView)v.findViewById(R.id.name_coffee_tv);
-        TextView tvAddress = (TextView)v.findViewById(R.id.address_tv);
-        TextView tvDistance = (TextView)v.findViewById(R.id.distance_tv);
+        TextView tvName = v.findViewById(R.id.name_coffee_tv);
+        TextView tvAddress = v.findViewById(R.id.address_tv);
+        TextView tvDistance = v.findViewById(R.id.distance_tv);
         //Set text for TextView
         tvName.setText(mProductList.get(position).getName());
         tvAddress.setText(mProductList.get(position).getAddress());

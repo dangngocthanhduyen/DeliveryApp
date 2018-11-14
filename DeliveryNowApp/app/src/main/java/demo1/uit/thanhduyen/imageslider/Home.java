@@ -1,14 +1,16 @@
 package demo1.uit.thanhduyen.imageslider;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -17,7 +19,7 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Home extends AppCompatActivity {
+public class Home extends Activity {
     ViewFlipper v_flipperHome;
 
     //list view
@@ -27,12 +29,24 @@ public class Home extends AppCompatActivity {
     public Handler mHandler;
     public View ftView;
     public boolean isLoading = false;
-    public int currentId=11;
+    public int currentId=5;
+//    public ImageView person_icon;
 
+//    public void onClickPersonIcon(){
+//        person_icon = (ImageView)findViewById(R.id.person_iv);
+//        person_icon.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent profile = new Intent(Home.this, Profile.class);
+//                startActivity(profile);
+//            }
+//        });
+//    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+//        onClickPersonIcon();
 
         //Init Slide
         int imagesHome[] = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};
@@ -41,8 +55,8 @@ public class Home extends AppCompatActivity {
         for (int imageHome: imagesHome){
             flipperImagesHome(imageHome);
         }
-
-        lvProduct = (ListView)findViewById(R.id.listview);
+        //edited (ListView)
+        lvProduct = findViewById(R.id.listview);
 
         LayoutInflater li = (LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         ftView = li.inflate(R.layout.load_footer, null);
@@ -78,7 +92,7 @@ public class Home extends AppCompatActivity {
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
 
                 //Check when scroll to last item in listview, in this tut, init data in listview = 10 item
-                if(view.getLastVisiblePosition() == totalItemCount-1 && lvProduct.getCount() >=10 && isLoading == false) {
+                if(view.getLastVisiblePosition() == totalItemCount-1 && lvProduct.getCount() >=10 && !isLoading) {
                     isLoading = true;
                     Thread thread = new ThreadGetMoreData();
                     //Start thread
@@ -131,6 +145,7 @@ public class Home extends AppCompatActivity {
         lst.add(new Product(++currentId, "Pizzahut", "444A, Cộng Hòa, Tân Bình, TP.HCM", 6));
         return lst;
     }
+
     public class ThreadGetMoreData extends Thread {
         @Override
         public void run() {
