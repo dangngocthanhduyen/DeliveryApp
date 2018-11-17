@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AbsListView;
@@ -19,7 +20,7 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Home extends Activity {
+public class Home extends AppCompatActivity {
     ViewFlipper v_flipperHome;
 
     //list view
@@ -29,24 +30,26 @@ public class Home extends Activity {
     public Handler mHandler;
     public View ftView;
     public boolean isLoading = false;
-    public int currentId=5;
-//    public ImageView person_icon;
+    public int currentId = 5;
+    public ImageView person_icon;
 
-//    public void onClickPersonIcon(){
-//        person_icon = (ImageView)findViewById(R.id.person_iv);
-//        person_icon.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent profile = new Intent(Home.this, Profile.class);
-//                startActivity(profile);
-//            }
-//        });
-//    }
+    public void onClickPersonIcon() {
+        person_icon = findViewById(R.id.person_iv);
+        person_icon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent profile= new Intent(Home.this, Profile.class);
+                startActivity(profile);
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-//        onClickPersonIcon();
+
+        onClickPersonIcon();
 
         //Init Slide
         int imagesHome[] = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};
