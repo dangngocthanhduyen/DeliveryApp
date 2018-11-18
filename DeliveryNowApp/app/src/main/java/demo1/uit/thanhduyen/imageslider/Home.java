@@ -32,6 +32,8 @@ public class Home extends AppCompatActivity {
     public boolean isLoading = false;
     public int currentId = 5;
     public ImageView person_icon;
+    public ImageView menu_iv;
+    public ImageView noti_iv;
 
     public void onClickPersonIcon() {
         person_icon = findViewById(R.id.person_iv);
@@ -43,6 +45,27 @@ public class Home extends AppCompatActivity {
             }
         });
     }
+    public void onClickMenu(){
+        menu_iv= findViewById(R.id.menu_iv);
+        menu_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent menu= new Intent(Home.this, Menu.class);
+                startActivity(menu);
+            }
+        });
+    }
+
+    public void onClickNoti(){
+        noti_iv= findViewById(R.id.noti_iv);
+        noti_iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent noti= new Intent(Home.this, Noti.class);
+                startActivity(noti);
+            }
+        });
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +73,8 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         onClickPersonIcon();
+        onClickMenu();
+        onClickNoti();
 
         //Init Slide
         int imagesHome[] = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};

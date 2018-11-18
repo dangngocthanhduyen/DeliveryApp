@@ -19,11 +19,10 @@
         <activity android:name=".Home" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />
-        <activity
-            android:name=".Profile">
-        </activity>
-
-
+        <activity android:name=".Profile" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Noti"></activity>
     </application>
 
 </manifest>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ImageSlider</string>
+    <string name="app_name">Delivery</string>
     <string name="getStarted">Get Started</string>
     <string name="haveAnotherAccount">Have another account? </string>
     <string name="signInNow"><a href="http://www.bla.com">Sign in now</a></string>
@@ -23,4 +23,9 @@
     <string name="phoneUser">0332533968</string>
     <string name="emailUser">dangngocthanhduyen.2712@gmail.com</string>
     <string name="signOut">Sign Out</string>
+    <string name="profile">Profile</string>
+    <string name="phone">Phone</string>
+    <string name="save">Save</string>
+    <string name="load">Loading.....</string>
+    <string name="editProfile">Edit Profile</string>
 </resources>
