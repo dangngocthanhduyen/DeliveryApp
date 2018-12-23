@@ -75,12 +75,13 @@ public class Home extends AppCompatActivity {
         noti_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent noti= new Intent(Home.this, Noti.class);
+                Intent noti= new Intent(Home.this, ProductDetail.class);
                 startActivity(noti);
             }
         });
     }
 
+<<<<<<< HEAD
 
 
     //event click vào mỗi item store
@@ -91,6 +92,15 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
                 Intent lv= new Intent(Home.this, DetailProduct.class);
                 startActivity(lv);
+=======
+    public void onClickItemStore(){
+        listview= findViewById(R.id.listview);
+        listview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent detail= new Intent(Home.this, ProductDetail.class);
+                startActivity(detail);
+>>>>>>> 5a18102e7ace1464da14640bf3e12f5665b7c175
             }
         });
     }
@@ -144,7 +154,11 @@ public class Home extends AppCompatActivity {
         onClickPersonIcon();
         onClickMenu();
         onClickNoti();
+<<<<<<< HEAD
         onClickStore();
+=======
+        onClickItemStore();
+>>>>>>> 5a18102e7ace1464da14640bf3e12f5665b7c175
 
         //Init Slide
         int imagesHome[] = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};
