@@ -24,7 +24,8 @@
         <activity android:name=".Profile" />
         <activity android:name=".EditProfile" />
         <activity android:name=".Menu" />
-        <activity android:name=".Noti"></activity>
+        <activity android:name=".Noti" />
+        <activity android:name=".DetailProduct"></activity>
     </application>
 
 </manifest>

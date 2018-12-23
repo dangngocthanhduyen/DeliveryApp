@@ -44,11 +44,10 @@ public class Home extends AppCompatActivity {
     private List<Product> mProductList;
     public Handler mHandler;
     public View ftView;
-    public boolean isLoading = false;
-    public int currentId = 5;
     public ImageView person_icon;
     public ImageView menu_iv;
     public ImageView noti_iv;
+    public RecyclerView listview;
 
     public void onClickPersonIcon() {
         person_icon = findViewById(R.id.person_iv);
@@ -82,6 +81,20 @@ public class Home extends AppCompatActivity {
         });
     }
 
+
+
+    //event click vào mỗi item store
+    public void onClickStore(){
+        listview = (RecyclerView)findViewById(R.id.listview);
+        listview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lv= new Intent(Home.this, DetailProduct.class);
+                startActivity(lv);
+            }
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,7 +114,7 @@ public class Home extends AppCompatActivity {
 
         // Tạo request lên server.
         Request request = new Request.Builder()
-                .url("http://b85b35d3.ngrok.io/Web-Admin/public/api/getstorelist")
+                .url("https://eb4aaabd.ngrok.io/Web-Admin/public/api/getstorelist")
                 .build();
 
         // Thực thi request.
@@ -131,6 +144,7 @@ public class Home extends AppCompatActivity {
         onClickPersonIcon();
         onClickMenu();
         onClickNoti();
+        onClickStore();
 
         //Init Slide
         int imagesHome[] = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};
