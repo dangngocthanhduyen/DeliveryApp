@@ -5,4 +5,6 @@
     <color name="startBlue">#09c6df</color>
     <color name="endBlue">#0bcce6</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="orangedark">#BB6008</color>
+    <color name="orangelight">#F3AE1B</color>
 </resources>

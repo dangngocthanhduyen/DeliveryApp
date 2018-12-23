@@ -28,4 +28,10 @@
     <string name="save">Save</string>
     <string name="load">Loading.....</string>
     <string name="editProfile">Edit Profile</string>
+    <string name="history">History</string>
+    <string name="storename">The Coffee House</string>
+    <string name="order_status">Đã hoàn thành</string>
+    <string name="time">18:21       12/10/2018</string>
+    <string name="price">87.000đ</string>
+    <string name="category">DRINK</string>
 </resources>
