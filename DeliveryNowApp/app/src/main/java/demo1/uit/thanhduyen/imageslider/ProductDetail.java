@@ -41,7 +41,7 @@ public class ProductDetail extends AppCompatActivity {
 
         // Tạo request lên server.
         Request request = new Request.Builder()
-                .url("https://eb4aaabd.ngrok.io/Web-Admin/public/api/getproductlist")
+                .url("https://e77937ec.ngrok.io/Web-Admin/public/api/getproductlist")
                 .build();
 
         // Thực thi request.

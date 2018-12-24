@@ -42,7 +42,7 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailItem
                 .into(holder.ivAvatar);
         holder.tvName.setText(u.name);
 //        holder.tvAddress.setText(String.valueOf(u.id));
-        holder.tvPrice.setText((u.price));
+        holder.tvPrice.setText((u.price) + " .000Đ");
     }
 
     public static class DetailItemViewHolder extends RecyclerView.ViewHolder {

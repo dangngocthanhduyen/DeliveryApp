@@ -25,11 +25,8 @@
         <activity android:name=".EditProfile" />
         <activity android:name=".Menu" />
         <activity android:name=".Noti" />
-<<<<<<< HEAD
         <activity android:name=".DetailProduct"></activity>
-=======
         <activity android:name=".ProductDetail"></activity>
->>>>>>> 5a18102e7ace1464da14640bf3e12f5665b7c175
     </application>
 
 </manifest>

@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
@@ -47,7 +48,8 @@ public class Home extends AppCompatActivity {
     public ImageView person_icon;
     public ImageView menu_iv;
     public ImageView noti_iv;
-    public RecyclerView listview;
+//    public RecyclerView listview;
+    public RelativeLayout lv;
 
     public void onClickPersonIcon() {
         person_icon = findViewById(R.id.person_iv);
@@ -81,29 +83,19 @@ public class Home extends AppCompatActivity {
         });
     }
 
-<<<<<<< HEAD
-
 
     //event click vào mỗi item store
-    public void onClickStore(){
-        listview = (RecyclerView)findViewById(R.id.listview);
-        listview.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent lv= new Intent(Home.this, DetailProduct.class);
-                startActivity(lv);
-=======
     public void onClickItemStore(){
-        listview= findViewById(R.id.listview);
-        listview.setOnClickListener(new View.OnClickListener() {
+        lv = (RelativeLayout)findViewById(R.id.lv);
+        lv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent detail= new Intent(Home.this, ProductDetail.class);
-                startActivity(detail);
->>>>>>> 5a18102e7ace1464da14640bf3e12f5665b7c175
+                Intent lv= new Intent(Home.this, ProductDetail.class);
+                startActivity(lv);
             }
         });
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -124,7 +116,7 @@ public class Home extends AppCompatActivity {
 
         // Tạo request lên server.
         Request request = new Request.Builder()
-                .url("https://eb4aaabd.ngrok.io/Web-Admin/public/api/getstorelist")
+                .url("https://e77937ec.ngrok.io/Web-Admin/public/api/getstorelist")
                 .build();
 
         // Thực thi request.
@@ -154,11 +146,8 @@ public class Home extends AppCompatActivity {
         onClickPersonIcon();
         onClickMenu();
         onClickNoti();
-<<<<<<< HEAD
-        onClickStore();
-=======
+//        onClickStore();
         onClickItemStore();
->>>>>>> 5a18102e7ace1464da14640bf3e12f5665b7c175
 
         //Init Slide
         int imagesHome[] = {R.drawable.banner_1, R.drawable.banner_2, R.drawable.banner_3};
