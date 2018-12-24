@@ -34,4 +34,10 @@
     <string name="time">18:21       12/10/2018</string>
     <string name="price">87.000đ</string>
     <string name="category">DRINK</string>
+    <string name="order">Order</string>
+    <string name="product">Trà sữa trân châu hoàng gia</string>
+    <string name="submit"><a href="http://www.bla.com">SUBMIT</a></string>
+
+
+
 </resources>
