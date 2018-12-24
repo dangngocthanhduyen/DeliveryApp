@@ -1,10 +1,13 @@
 package demo1.uit.thanhduyen.imageslider;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.View;
+import android.widget.RelativeLayout;
 
 import com.squareup.moshi.JsonAdapter;
 import com.squareup.moshi.Moshi;
@@ -22,6 +25,18 @@ import okhttp3.Response;
 
 public class ProductDetail extends AppCompatActivity {
 
+    public RelativeLayout product_order_lv;
+
+    public void onClickItemStore(){
+        product_order_lv = (RelativeLayout)findViewById(R.id.product_order_lv);
+        product_order_lv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent product_order_lv= new Intent(ProductDetail.this, Order.class);
+                startActivity(product_order_lv);
+            }
+        });
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,5 +82,7 @@ public class ProductDetail extends AppCompatActivity {
                 });
             }
         });
+
+        onClickItemStore();
     }
 }

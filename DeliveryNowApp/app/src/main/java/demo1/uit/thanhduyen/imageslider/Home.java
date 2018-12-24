@@ -77,7 +77,7 @@ public class Home extends AppCompatActivity {
         noti_iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent noti= new Intent(Home.this, ProductDetail.class);
+                Intent noti= new Intent(Home.this, Noti.class);
                 startActivity(noti);
             }
         });

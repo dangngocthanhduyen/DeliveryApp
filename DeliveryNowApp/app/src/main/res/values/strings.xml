@@ -26,7 +26,7 @@
     <string name="profile">Profile</string>
     <string name="phone">Phone</string>
     <string name="save">Save</string>
-    <string name="load">Loading.....</string>
+    <string name="load">Không có thông báo</string>
     <string name="editProfile">Edit Profile</string>
     <string name="history">History</string>
     <string name="storename">The Coffee House</string>
@@ -37,7 +37,6 @@
     <string name="order">Order</string>
     <string name="product">Trà sữa trân châu hoàng gia</string>
     <string name="submit"><a href="http://www.bla.com">SUBMIT</a></string>
-
 
 
 </resources>
