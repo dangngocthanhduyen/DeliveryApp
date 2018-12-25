@@ -36,7 +36,7 @@
     <string name="category">DRINK</string>
     <string name="order">Order</string>
     <string name="product">Trà sữa trân châu hoàng gia</string>
-    <string name="submit"><a href="http://www.bla.com">SUBMIT</a></string>
+    <string name="submit"><a href="http://www.bla.com">ORDER</a></string>
 
 
 </resources>

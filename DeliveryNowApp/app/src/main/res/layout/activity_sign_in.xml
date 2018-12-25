@@ -34,6 +34,7 @@
         android:layout_below="@+id/email_et"
         android:hint="@string/password"
         android:layout_marginTop="10dp"
+        android:password="true"
         android:textColorLink="@android:color/darker_gray"/>
 
     <!--Sign In Button-->

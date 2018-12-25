@@ -116,7 +116,7 @@ public class Home extends AppCompatActivity {
 
         // Tạo request lên server.
         Request request = new Request.Builder()
-                .url("https://e77937ec.ngrok.io/Web-Admin/public/api/getstorelist")
+                .url("https://9c8b410e.ngrok.io/Web-Admin/public/api/getstorelist")
                 .build();
 
         // Thực thi request.
