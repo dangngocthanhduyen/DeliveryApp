@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -20,6 +21,8 @@ public class Order extends AppCompatActivity {
     public ImageView person_icon;
     public ImageView menu_iv;
     public ImageView noti_iv;
+    public Button submit_btn;
+//    public ImageView menu_iv;
 
     public void onClickPersonIcon() {
         person_icon = findViewById(R.id.person_iv);
@@ -53,6 +56,16 @@ public class Order extends AppCompatActivity {
         });
     }
 
+    public void onClickOrder(){
+        submit_btn= findViewById(R.id.submit_btn);
+        submit_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent menu= new Intent(Order.this, Menu.class);
+                startActivity(menu);
+            }
+        });
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,5 +73,6 @@ public class Order extends AppCompatActivity {
         onClickPersonIcon();
         onClickHome();
         onClickNoti();
+        onClickOrder();
     }
 }

@@ -17,11 +17,11 @@
     <string name="popularBrand">Popular Brand</string>
     <string name="suggestName">The Alley, Bún thịt nướng,&#8230;</string>
     <string name="nameCoffee">The Coffee House</string>
-    <string name="address">444A Cộng Hòa, P13, Tân Bình, TPHCM</string>
+    <string name="address">30 Lê Lợi, Bến Nghé, Quận 1, Hồ Chí Minh</string>
     <string name="distance">588km</string>
-    <string name="nameUser">Đặng Ngọc Thanh Duyên</string>
+    <string name="nameUser">Duyen</string>
     <string name="phoneUser">0332533968</string>
-    <string name="emailUser">dangngocthanhduyen.2712@gmail.com</string>
+    <string name="emailUser">thanhduyen@gmail.com</string>
     <string name="signOut">Sign Out</string>
     <string name="profile">Profile</string>
     <string name="phone">Phone</string>
@@ -29,10 +29,10 @@
     <string name="load">Không có thông báo</string>
     <string name="editProfile">Edit Profile</string>
     <string name="history">History</string>
-    <string name="storename">The Coffee House</string>
+    <string name="storename">Morico - Contemporary</string>
     <string name="order_status">Đã hoàn thành</string>
     <string name="time">18:21       12/10/2018</string>
-    <string name="price">87.000đ</string>
+    <string name="price">35.000Đ</string>
     <string name="category">DRINK</string>
     <string name="order">Order</string>
     <string name="product">Trà sữa trân châu hoàng gia</string>
